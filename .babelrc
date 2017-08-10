@@ -1,4 +1,4 @@
 {
-  "presets": ["cf"],
+  "presets": ["es2015"],
   "plugins": []
 }
