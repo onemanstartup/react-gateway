@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import GatewayRegistry from './GatewayRegistry';
-import {deprecated} from 'react-prop-types';
 
 export default class GatewayDest extends React.Component {
   static contextTypes = {
@@ -10,7 +9,6 @@ export default class GatewayDest extends React.Component {
 
   static propTypes = {
     name: PropTypes.string.isRequired,
-    tagName: deprecated(PropTypes.string, 'Use "component" instead.'),
     component: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.func
